@@ -16,10 +16,10 @@ public class Main {
 
     public static void checkOS (int clientOS, int clientDeviceYear){
         int currentYear = LocalDate.now().getYear();
-        if (clientDeviceYear >= currentYear && clientOS == 0) {
+        if (clientDeviceYear == currentYear && clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        else if (clientDeviceYear >= currentYear && clientOS == 1) {
+        else if (clientDeviceYear == currentYear && clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         else if (clientDeviceYear < currentYear && clientOS == 0) {
