@@ -16,6 +16,7 @@ public class Main {
 
     public static void checkOS (int clientOS, int clientDeviceYear){
         int currentYear = LocalDate.now().getYear();
+
         if (clientDeviceYear == currentYear && clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
